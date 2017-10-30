@@ -52,10 +52,6 @@ nav ul li {
 	padding: 0 1%;
 }
 
-.column img {
-    margin-bottom: 12px;
-}
-
 .column-large {
 	width: 39%;
 }
@@ -80,15 +76,15 @@ nav ul li {
 }
 
 .button {
-	padding-bottom: 18px;
+	margin-bottom: 12px;
 	position: relative;
+	width: 100%;
+
 }
 .button img {
-	width: 100%;
-	object-fit: scale-down;
+    max-width: 100%;
+	object-fit: fill;	
 }
-
-
 .bottomright {
     position: absolute;
     bottom: 8px;
