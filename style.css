@@ -1,0 +1,189 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+
+/*----------The Navigation---------------*/
+nav {
+	width: 200px;
+	height: 100%;
+	position: fixed;
+	float: left;
+	1border: 1px solid black;
+	padding: 20px;
+	border-right: 2px solid black;
+}
+
+nav img {
+	width: 100%;
+	padding-bottom: 2em;
+}
+
+nav a {
+	display: block;
+	text-decoration: none;
+	color: #111;
+	font-size: 1.2em;
+	font-weight: 80;
+	padding-bottom: 4px;
+}
+
+nav ul li {
+    text-align: center;
+}
+
+/*---------The main section -------------*/
+
+#main {
+	padding: 20px 22px;
+	margin: auto;
+	margin-left: 200px;
+}
+
+.column {
+	width: 29%;
+	float: left;
+	padding: 0 1%;
+}
+
+.column img {
+    margin-bottom: 12px;
+}
+
+.column-large {
+	width: 39%;
+}
+
+#main:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media (max-width: 960px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 740px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.button {
+	padding-bottom: 18px;
+	position: relative;
+}
+.button img {
+	width: 100%;
+	object-fit: scale-down;
+}
+
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: white;
+    font-size: 48px;
+}
+
+.projectname {
+	color: black;
+	font-weight: 800;
+	font-size: 3em;
+	z-index: 10;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .4s ease;
+  background-color: #a6a6a6;
+}
+
+.button:hover .overlay {
+  opacity: 0.9;
+}
+
+.text {
+  white-space: nowrap; 
+  color: white;
+  font-size: 16px;
+  font-weight: 800;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/*The project page*/
+
+.project_aside {
+	width: 30%;
+	line-height: 17px;
+	display: inline-block;
+}
+
+.project_heading {
+
+}
+
+.project_title {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 1.3em;
+}
+.project_subtitle {
+	text-transform: uppercase;
+	
+	font-weight: bolder;
+}
+.place {
+	color: green;
+	font-size: 0.9em;
+	text-transform: uppercase;
+}
+.project_h4 {
+	font-size: 0.9em;
+	font-weight: bolder;
+	margin-top: 8px;
+}
+.small_text {
+	font-size: 0.8em;
+}
+
+.summary {
+	text-indent: 2em;
+	text-align: justify;
+	hyphens: auto;
+}
+.project_main {
+	width: 65%;
+	margin: 0 0 0 24px;
+	display: inline-block;
+	vertical-align: top;
+}
