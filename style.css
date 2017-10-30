@@ -18,6 +18,9 @@ nav {
 	1border: 1px solid black;
 	padding: 20px;
 	border-right: 2px solid black;
+	background-image: url('images/side_background.png');
+	background-repeat: no-repeat;
+	background-position: right bottom;
 }
 
 nav img {
@@ -120,6 +123,7 @@ nav ul li {
 
 .button:hover .overlay {
   opacity: 0.9;
+  border-bottom: 4px solid #C00000;
 }
 
 .text {
