@@ -16,7 +16,6 @@ nav {
 	height: 100%;
 	position: fixed;
 	float: left;
-	1border: 1px solid black;
 	padding: 20px;
 	border-right: 2px solid black;
 	background-image: url('images/side_background.png');
@@ -34,7 +33,7 @@ nav a {
 	text-decoration: none;
 	color: #111;
 	font-size: 1.2em;
-	font-weight: 80;
+	font-weight: 100;
 	padding-bottom: 4px;
 }
 

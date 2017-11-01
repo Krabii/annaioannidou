@@ -1,0 +1,52 @@
+/*The CV styles*/
+
+
+#cv-grid {
+	display: grid;
+	grid-template-rows: 300px 1fr;
+   	grid-template-columns: 240px 1fr;
+	grid-template-areas: "image  title"
+                           "content content";
+}
+
+.cv-image {
+	grid-area: image;
+}
+.cv-image img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cv-title {
+	grid-area: title;
+	border-bottom: 4px dotted black;
+	padding: 12px;
+	text-align: center;
+}
+.cv-title > p {
+	font-size: 12px;
+	text-align: left;
+	margin-left: 200px;
+}
+
+.cv-content {
+	grid-area: content;
+	font-size: 14px;
+}
+.cv-content > div {
+  display:flex;
+  padding-bottom: 4px;
+}
+
+.cv-content > div p {
+	padding: 0 24px;
+}
+.cv-content > div p.timeline{
+  flex: 0 23%;
+  text-align: right;
+}
+
+.cv-content > div p.item{
+	flex: 0 77%;
+  text-align: left;
+}
