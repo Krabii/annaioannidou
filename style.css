@@ -170,11 +170,18 @@ nav ul li {
 /*The project page*/
 
 .project_aside {
-	width: 30%;
-	line-height: 17px;
-	display: inline-block;
+	max-width: 650px;
+	margin: auto;
+	line-height: 18px;
+	display: block;
 }
-
+.subtitle-flex {
+	display: flex;
+	justify-content: space-around;
+}
+.flex-item {
+	flex: 1;
+}
 .project_heading {
 
 }
@@ -182,11 +189,10 @@ nav ul li {
 .project_title {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 1.3em;
+	font-size: 1.4em;
 }
 .project_subtitle {
 	text-transform: uppercase;
-	
 	font-weight: bolder;
 }
 .place {
@@ -209,8 +215,9 @@ nav ul li {
 	hyphens: auto;
 }
 .project_main {
-	width: 65%;
-	margin: 0 0 0 24px;
+	width: 100%;
+	margin: auto;
 	display: inline-block;
 	vertical-align: top;
+	margin-bottom: 64px;
 }

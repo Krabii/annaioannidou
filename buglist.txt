@@ -1,1 +1,4 @@
-* Images should strech to fit their container...
+* Images should strech to fit their container... [fixed]
+* Images Alt texts
+* Media queries tablet and movile better navigation bar...smaller fonts
+* Movile mode project details flexbox vertical align.
