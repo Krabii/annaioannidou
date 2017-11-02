@@ -153,8 +153,9 @@ nav ul li {
 }
 
 .text {
-  white-space: nowrap; 
+  white-space: pre-line;
   color: white;
+  text-align: center;
   font-size: 16px;
   font-weight: 800;
   position: absolute;
